@@ -24,13 +24,13 @@ def main():
       print(" 2. Convert from Fahrenheit to Celsius")
       print()
       choice = input("Please choose from the above menu: ")
-      temperature = float(input("Enter a temperature to convert: "))
+      temperature = input("Enter a temperature to convert: ")
       if choice == "1":
          convert_temp = temperature * 9/5 + 32
-         print(f"{temperature}:.1f degrees Celsius is {convert_temp}:.1f degrees Fahrenheit.")
+         print(f"{temperature:.1f} degrees Celsius is {convert_temp:.1f} degrees Fahrenheit.")
       elif choice == "2":
         convert_temp = (temperature - 32) * 5/9
-        print(f"{temperature}:.1f degrees Fahrenheit is {convert_temp}:.1f degrees Celsius.")
+        print(f"{temperature:.f} degrees Fahrenheit is {convert_temp:.1f} degrees Celsius.")
     convert_temp()
 main()
 
