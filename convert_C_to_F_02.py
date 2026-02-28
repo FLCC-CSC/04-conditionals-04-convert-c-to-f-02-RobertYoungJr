@@ -23,8 +23,8 @@ def main():
       print(" 1. Convert from Celsius to Fahrenheit")
       print(" 2. Convert from Fahrenheit to Celsius")
       print()
-      choice = int(input("Please choose from the above menu: "))
-      temperature = int(input("Enter a temperature to convert: "))
+      choice = float(input("Please choose from the above menu: "))
+      temperature = float(input("Enter a temperature to convert: "))
       if choice == 1:
          convert_temp = temperature * 9/5 + 32
          print(f"{temperature}:.1f degrees Celsius is {convert_temp}:.1f degrees Fahrenheit.")
