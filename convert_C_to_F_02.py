@@ -23,17 +23,16 @@ def main():
       print(" 1. Convert from Celsius to Fahrenheit")
       print(" 2. Convert from Fahrenheit to Celsius")
       print()
-      choice = input("Please choose from the above menu: ")
+      choice = float(input("Please choose from the above menu: "))
       temperature = float(input("Enter a temperature to convert: "))
       if choice == 1:
          convert_temp = temperature * 9/5 + 32
          print(f"{temperature:.1f} degrees Celsius is {convert_temp:.1f} degrees Fahrenheit.")
       elif choice == 2:
         convert_temp = (temperature - 32) * 5/9
-        print(f"{temperature:.f} degrees Fahrenheit is {convert_temp:.1f} degrees Celsius.")
+        print(f"{temperature:.1f} degrees Fahrenheit is {convert_temp:.1f} degrees Celsius.")
     convert_temp()
 main()
-
 ########### END YER CODE ABOVE THIS LINE ###########
 
 ########################################
@@ -99,7 +98,7 @@ Enter a temperature to convert: -40
 
 1. What is one lesson you learned in this lab?
 
-I didn't really learn anything new, just getting into the flow of writing code and inmporting previous modules. 
+I have had a hard time getting the grading to work. I am unsure still what the error has been. 
 
 
 '''
