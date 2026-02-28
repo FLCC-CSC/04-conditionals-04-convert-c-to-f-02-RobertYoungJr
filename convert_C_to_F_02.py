@@ -1,8 +1,8 @@
 # FILE NAME - convert_C_to_F_02.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Robert Young
+# DATE: 02/28/2026
+# BRIEF DESCRIPTION: Create module that asks a user to convert temp from C to F or F to C. Then asks for the Temp.
 
 
 
@@ -14,21 +14,26 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
-
-
-
-
-
-
-
-
-
-
+def main():
+    def convert_temp():
+        # c to f = temperature * 9/5 + 32
+        # f to c = (temperature - 32 ) * 5/9
+      print("===== Temperature Converter =====") 
+      print()
+      print("  1. Convert from Celsius to Fahrenheit")
+      print("  2. Convert from Fahrenheit to Celsius")
+      print()
+      choice = float(input("Please choose from the above menu: "))
+      temperature = float(input("Enter a temperature to convert: "))
+      if choice == 1:
+         convert_temp = temperature * 9/5 + 32
+         print(f"{temperature:.1f} degrees Celsius is {convert_temp:.1f} degrees Fahrenheit.")
+      elif choice == 2:
+        convert_temp = (temperature - 32) * 5/9
+        print(f"{temperature:.1f} degrees Fahrenheit is {convert_temp:.1f} degrees Celsius.")
+    convert_temp()
+main()
 ########### END YER CODE ABOVE THIS LINE ###########
-
-    
-
-
 
 ########################################
 #          SAMPLE OUTPUT
@@ -50,8 +55,8 @@ Enter a temperature to convert: 100
 '''
 ===== Temperature Converter =====
 
-  1. Convert from Celsius to Fahrenheit
-  2. Convert from Fahrenheit to Celsius
+   1. Convert from Celsius to Fahrenheit
+   2. Convert from Fahrenheit to Celsius
 
 Please choose from the above menu: 2
 Enter a temperature to convert: 32
@@ -93,10 +98,7 @@ Enter a temperature to convert: -40
 
 1. What is one lesson you learned in this lab?
 
-
-
-
-
+I have had a hard time getting the grading to work. I am unsure still what the error has been. 
 
 
 '''
